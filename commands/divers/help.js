@@ -25,7 +25,7 @@ module.exports = class EmbedCommand extends Command {
       .setTitle(`Fiche utilisation du bot`)
 
       .setDescription(
-        `Ce bot sert à faciliter les actions induits par un jet de Pierre Feuille Ciseaux.`
+        `Ce bot sert à faciliter les actions induites par un jet de Pierre Feuille Ciseaux.`
       )
       .setFooter(`METVampire`, `${this.client.user.displayAvatarURL()}`)
 
@@ -37,7 +37,7 @@ module.exports = class EmbedCommand extends Command {
 
       .addField(
         `-------`,
-        `**!met jet** : Affiche l'aide de la commande \n
+        `**!met jet** : Affiche l'aide de la commande. \n
         **!met jet [p / f / c] **: Lance un jet avec comme valeur l'argument passé en paramètre. \n
         **!met jet ?** : Lance un jet aléatoire. \n
         (alias : p / P / pierre / Pierre    |    f / F / feuille / Feuille    |    c / C / ciseaux / Ciseaux)`,

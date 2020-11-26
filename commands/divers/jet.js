@@ -1,34 +1,11 @@
+const {
+  choix,
+  argsPossibles,
+  mapChoix,
+  getRandomInt,
+  pfc,
+} = require("../../utils");
 const { Command } = require("discord.js-commando");
-
-const choix = ["p", "c", "f"];
-const argsPossibles = [
-  "p",
-  "pierre",
-  "Pierre",
-  "P",
-  "c",
-  "ciseaux",
-  "Ciseaux",
-  "C",
-  "f",
-  "feuille",
-  "Feuille",
-  "F",
-];
-
-const mapChoix = {
-  p: "Pierre",
-  f: "Feuille",
-  c: "Ciseaux",
-};
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function pfc() {
-  return choix[getRandomInt(3)];
-}
 
 module.exports = class ReplyCommand extends Command {
   constructor(client) {

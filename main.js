@@ -3,7 +3,7 @@ const path = require("path");
 
 const client = new CommandoClient({
   commandPrefix: "!met",
-  owner: "",
+  owner: "638769217398636555",
   disableMentions: "everyone",
 });
 
@@ -18,4 +18,4 @@ client.once("ready", () => {
 
 client.on("error", console.error);
 
-client.login("");
+client.login("NzgwMTQ2NzY4MzQ3MTM2MDMw.X7q2TA.meEe_1o87l5OiMvlNvB6wxGJU48");
