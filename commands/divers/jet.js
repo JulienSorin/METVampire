@@ -41,7 +41,6 @@ module.exports = class ReplyCommand extends Command {
         usages: 10,
         duration: 1,
       },
-      guildOnly: true,
     });
   }
 
