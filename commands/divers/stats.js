@@ -26,6 +26,10 @@ module.exports = class ReplyCommand extends Command {
       msg.say("`L'argument donné en paramètre doit être un entier.`");
       return;
     }
+    if (nb > 1e8) {
+      msg.say("Nombre trop grand.");
+      return;
+    }
     let m = { p: 0, f: 0, c: 0 };
     for (let i = 0; i < nb; i++) {
       let k = pfc();
