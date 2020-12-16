@@ -8,7 +8,7 @@ module.exports = class EmbedCommand extends Command {
       memberName: "help",
       group: "divers",
       description: "Affiche l'aide.",
-      ownerOnly: true,
+      ownerOnly: false,
       clientPermissions: ["SEND_MESSAGES", "EMBED_LINKS"], // le bot doit avoir la permission d'envoyer des messages
       throttling: {
         usages: 2,
@@ -38,7 +38,7 @@ module.exports = class EmbedCommand extends Command {
       .addField(
         `-------`,
         `**!met jet** : Affiche l'aide de la commande. \n
-        **!met jet [p / f / c] **: Lance un jet avec comme valeur l'argument passé en paramètre. \n
+        **!met jet p / f / c **: Lance un jet avec comme valeur pierre, feuille ou ciseaux définie. \n
         **!met jet ?** : Lance un jet aléatoire. \n
         (alias : p / P / pierre / Pierre    |    f / F / feuille / Feuille    |    c / C / ciseaux / Ciseaux)`,
         true
